@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(11, 17, 33, 0.95)';
-            navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.5)';
+            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.05)';
         } else {
-            navbar.style.background = 'rgba(11, 17, 33, 0.8)';
+            navbar.style.background = 'rgba(255, 255, 255, 0.85)';
             navbar.style.boxShadow = 'none';
         }
     });
@@ -76,8 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // Optional: stop observing once animated
-                // observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
