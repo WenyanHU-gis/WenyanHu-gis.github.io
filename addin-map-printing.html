@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-in Tools for Map Printing | Wenyan Hu</title>
+    <meta name="description"
+        content="Migrated and enhanced C# ArcGIS add-ins to automate planning scheme amendment workflows by Wenyan Hu.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Simplified Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html#projects" class="logo"><i class="fas fa-arrow-left"></i> Back to
+                <span>Portfolio</span></a>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top: 120px; min-height: 100vh;">
+        <div class="container">
+            <div class="glass-card" style="max-width: 800px; margin: 0 auto;">
+                <div class="project-year" style="color: var(--primary-color); font-weight: 600; margin-bottom: 1rem;">
+                    2024 — Current</div>
+                <h1 style="color: var(--text-color); font-family: var(--font-heading); margin-bottom: 1.5rem;">Add-in
+                    Tools for Map Printing</h1>
+
+                <div class="project-tags" style="margin-bottom: 2rem;">
+                    <span>C#</span><span>ArcGIS Pro SDK</span><span>ArcGIS Pro</span><span>Python</span><span>Automation</span>
+                </div>
+
+                <div style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
+                    <p style="margin-bottom: 1.5rem;">
+                        This project focuses on the migration and enhancement of robust C# ArcGIS Pro Add-ins designed to automate map printing and streamlining planning scheme amendment workflows. It replaces legacy tools, ensuring seamless compatibility and integration within the current ArcGIS Pro framework.
+                    </p>
+
+                    <!-- Main Project Image -->
+                    <div style="margin-bottom: 2.5rem; text-align: center;">
+                        <img src="photos/gazetted.png" alt="Add-in Tools for Map Printing Interface"
+                            style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05);">
+                    </div>
+
+                    <h3 style="color: var(--text-color); margin-bottom: 1rem;">Key Features & Development:</h3>
+                    <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 1.5rem;">
+                        <li>Migrated complex ArcObjects-based tools from ArcMap to the contemporary ArcGIS Pro SDK utilizing C# and .NET frameworks.</li>
+                        <li>Automated map production for gazetting purposes, greatly accelerating the spatial document layout generation.</li>
+                        <li>Integrated Python scripting via ArcPy to complement automation tasks handling large-scale geodatabase operations.</li>
+                        <li>Enhanced user interface capabilities with custom ribbons and responsive dockpanes for a better user experience for GIS operators.</li>
+                        <li>Ensured robust quality control mechanisms within the printing process for planning scheme amendments.</li>
+                    </ul>
+
+                    <h3 style="color: var(--text-color); margin-bottom: 1rem;">Impact:</h3>
+                    <p>
+                        The development of these tailored add-ins eliminated significant manual mapping effort, driving higher accuracy and faster turnaround times on planning scheme processes, providing end users with a robust, scalable toolset.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; <span id="year"></span> Wenyan Hu. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
