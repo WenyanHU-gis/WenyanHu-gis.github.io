@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioCondition Score Calculation Tool | Wenyan Hu</title>
+    <meta name="description"
+        content="Automated Python and ArcPy geoprocessing tool for ArcGIS Pro to calculate BioCondition landscape metrics by Wenyan Hu.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Simplified Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html#projects" class="logo"><i class="fas fa-arrow-left"></i> Back to
+                <span>Portfolio</span></a>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top: 120px; min-height: 100vh;">
+        <div class="container">
+            <div class="glass-card" style="max-width: 800px; margin: 0 auto;">
+                <div class="project-year" style="color: var(--primary-color); font-weight: 600; margin-bottom: 1rem;">
+                    2026 — Current</div>
+                <h1 style="color: var(--text-color); font-family: var(--font-heading); margin-bottom: 1.5rem;">
+                    BioCondition Score Calculation Python Tool</h1>
+
+                <div class="project-tags" style="margin-bottom: 2rem;">
+                    <span>Python</span><span>ArcPy</span><span>ArcGIS Pro</span><span>Ecology</span><span>Spatial
+                        Analysis</span>
+                </div>
+
+                <div style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
+                    <p style="margin-bottom: 1.5rem;">
+                        The <strong>Landscape Attribute Assessment Tool (ArcPy)</strong> is a ready-to-use Python tool
+                        packaged as an ArcGIS Pro Python Toolbox (<code>.pyt</code>). It automates the calculation of
+                        BioCondition (2015) landscape-scale metrics for fragmented subregions, assessing biodiversity
+                        parameters across size, connectivity, and environmental context.
+                    </p>
+
+                    <!-- Main Project Image -->
+                    <div style="margin-bottom: 2.5rem; text-align: center;">
+                        <img src="photos/biocondition.png"
+                            alt="BioCondition Score Calculation Tool Architecture & Workflow"
+                            style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05);">
+                    </div>
+
+                    <h3 style="color: var(--text-color); margin-bottom: 1rem;">Key Features & Workflow:</h3>
+                    <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 1.5rem;">
+                        <li><strong>Data Input & Preparation:</strong> Integrates field-verified Regional Ecosystem (RE)
+                            data with Queensland Globe spatial datasets, clipping, merging, and harmonising vegetation
+                            classes seamlessly.</li>
+                        <li><strong>ArcPy Analysis Engine:</strong> Delineates contiguous remnant vegetation patches and
+                            automates metrics calculation for each patch based on official BioCondition methodology.
+                        </li>
+                        <li><strong>Core Landscape Attributes Evaluated:</strong>
+                            <ul
+                                style="list-style-type: circle; margin-left: 20px; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                                <li><strong>Size of Patch:</strong> Evaluates area of contiguous remnant vegetation (ha)
+                                    to measure habitat value.</li>
+                                <li><strong>Connectivity:</strong> Calculates distance to nearest native vegetation
+                                    patches and surrounding landscape connections.</li>
+                                <li><strong>Context:</strong> Computes the proportion of native vegetation within a
+                                    specified radius (e.g., 1 km).</li>
+                            </ul>
+                        </li>
+                        <li><strong>ArcGIS Pro Tool Integration:</strong> Built as a Python Toolbox (<code>.pyt</code>)
+                            with a user-friendly parameter interface for direct execution within ArcGIS Pro.</li>
+                        <li><strong>Spatial & Tabular Outputs:</strong> Generates structured file geodatabase
+                            (<code>.gdb</code>) tables and GIS vector layers ready for cartographic mapping, reporting,
+                            and statutory environmental assessments.</li>
+                    </ul>
+
+                    <h3 style="color: var(--text-color); margin-bottom: 1rem;">Impact & Value:</h3>
+                    <p>
+                        This tool streamlines environmental impact assessments and conservation planning in Queensland
+                        by replacing manual GIS steps with a repeatable, automated ArcPy script. It enables ecological
+                        consultants and spatial analysts to evaluate fragmented subregion metrics rapidly with high
+                        consistency.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; <span id="year"></span> Wenyan Hu. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
